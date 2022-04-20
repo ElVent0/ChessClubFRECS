@@ -472,6 +472,10 @@ a {
   width: 217px;
   height: 466px;
   background: var(--color-bg-grey);
+  background-image: url(../images/imgbg5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
   overflow: hidden;
 }
@@ -554,6 +558,7 @@ a {
 }
 
 .recomendation__fifth_absolute {
+  line-height: 22px;
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
   font-size: 16px;
@@ -589,6 +594,16 @@ a {
 
 .recomendation__button_second {
   margin-top: 20px;
+  padding: 10px 15px;
+  border: 2px #fff solid;
+  border-radius: 5px;
+  max-width: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.recomendation__button_fifth {
+  margin-top: 60px;
   padding: 10px 15px;
   border: 2px #fff solid;
   border-radius: 5px;
