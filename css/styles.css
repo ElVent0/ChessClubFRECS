@@ -612,6 +612,10 @@ a {
   justify-content: center;
 }
 
+.recomendation__button_fifth:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .recomendation__button_second:hover {
   background: rgba(255, 255, 255, 0.2);
 }
