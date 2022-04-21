@@ -68,6 +68,55 @@ a {
 
 /* section 1 */
 
+.quote {
+  position: absolute;
+  transform: rotate(90deg);
+  right: -100px;
+  top: 850px;
+  color: var(--color-text-grey);
+  text-align: right;
+  line-height: 30px;
+  font-family: "Playfair Display", serif;
+}
+
+.quote-second {
+  position: absolute;
+  transform: rotate(270deg);
+  left: -50px;
+  top: 1470px;
+  color: var(--color-text-grey);
+  text-align: right;
+  line-height: 30px;
+  font-family: "Playfair Display", serif;
+}
+
+.quote-third {
+  position: absolute;
+  transform: rotate(90deg);
+  right: -140px;
+  top: 1900px;
+  color: var(--color-text-grey);
+  text-align: right;
+  line-height: 30px;
+  font-family: "Playfair Display", serif;
+}
+
+.quote-fourth {
+  position: absolute;
+  transform: rotate(270deg);
+  left: -180px;
+  top: 2750px;
+  color: var(--color-text-grey);
+  text-align: right;
+  line-height: 30px;
+  font-family: "Playfair Display", serif;
+}
+
+.italic {
+  font-style: italic;
+  text-align: right;
+}
+
 .hero {
   height: 700px;
   margin-left: auto;
@@ -178,11 +227,56 @@ a {
   padding-top: 167px;
 }
 
+@keyframes animateY50 {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-15px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  75% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes animateY-50 {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(15px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  75% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .about-us__poster:nth-child(1) {
   background-image: url(../images/icon1.png);
   background-repeat: no-repeat;
   background-position: center 43px;
   user-select: none;
+  animation: animateY50 5000ms infinite 1000ms;
 }
 
 .about-us__poster:nth-child(2) {
@@ -190,6 +284,7 @@ a {
   background-repeat: no-repeat;
   background-position: center 43px;
   user-select: none;
+  animation: animateY-50 5000ms infinite 1000ms;
 }
 
 .about-us__poster:nth-child(3) {
@@ -197,6 +292,7 @@ a {
   background-repeat: no-repeat;
   background-position: center 43px;
   user-select: none;
+  animation: animateY50 5000ms infinite 1000ms;
 }
 
 .about-us__poster:nth-child(4) {
@@ -205,6 +301,7 @@ a {
   background-position: center 43px;
   user-select: none;
   margin-right: 0;
+  animation: animateY-50 5000ms infinite 1000ms;
 }
 
 .about-us__poster:nth-child(2) {
