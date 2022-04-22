@@ -66,12 +66,10 @@ a {
   background: var(--color-yellow);
 }
 
-/* section 1 */
-
 .quote {
   position: absolute;
   transform: rotate(90deg);
-  right: -100px;
+  right: -140px;
   top: 1150px;
   color: var(--color-text-grey);
   text-align: right;
@@ -93,7 +91,7 @@ a {
 .quote-third {
   position: absolute;
   transform: rotate(90deg);
-  right: -190px;
+  right: -220px;
   top: 2300px;
   color: var(--color-text-grey);
   text-align: right;
@@ -116,6 +114,8 @@ a {
   font-style: italic;
   text-align: right;
 }
+
+/* section 1 */
 
 .hero {
   height: 700px;
@@ -143,6 +143,7 @@ a {
   font-size: 32px;
   line-height: 38px;
   margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
 }
 .hero__paragraph {
   font-size: 24px;
@@ -203,7 +204,7 @@ a {
 /* section 2 */
 
 .about-us {
-  width: 100%;
+  width: 90%;
   background-image: linear-gradient(
     to bottom,
     #fff 50%,
@@ -214,6 +215,8 @@ a {
 }
 .about-us__content {
   display: flex;
+  position: relative;
+  left: 11%;
 }
 .about-us__poster {
   width: 216px;
@@ -317,8 +320,14 @@ a {
 /* section 3 */
 
 .statistics {
+  width: 100%;
   padding: 67px 0;
-  background: var(--color-bg-grey);
+  background-image: linear-gradient(
+    to right,
+    var(--color-bg-grey) 90%,
+    #fff 90%,
+    #fff 100%
+  );
 }
 
 .statistics__content {
@@ -416,7 +425,12 @@ a {
 /* section 5 */
 
 .rating {
-  background: var(--color-bg-grey);
+  background-image: linear-gradient(
+    to right,
+    var(--color-bg-grey) 90%,
+    #fff 90%,
+    #fff 100%
+  );
   padding: 67px 0;
 }
 
