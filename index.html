@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <main>
@@ -90,7 +91,7 @@
         </p>
         <div class="container">
           <div class="statistics__content">
-            <div class="statistics__text">
+            <div class="statistics__text" data-aos="zoom-in-right">
               <h2 class="statistics__title">Зараз триває 2-ий сезон</h2>
               <ul class="statistics__list">
                 <li class="statistics__item">
@@ -132,7 +133,7 @@
               class="chesscom__image"
               width="355"
             />
-            <div class="chesscom__text">
+            <div class="chesscom__text" data-aos="zoom-in-left">
               <h2 class="chesscom__title">CHESS.COM</h2>
               <p class="chesscom__paragraph">
                 Один з найпопулярніших майданчиків для онлайн-партій у світі.
@@ -160,7 +161,7 @@
             Таблиця оновлюється вкінці кожного сезону
           </p>
           <div class="rating__table">
-            <ul class="rating__list-first">
+            <ul class="rating__list-first" data-aos="zoom-in-right">
               <li class="rating__item-first">
                 BOHDAN1403 - <span class="rating__span">9.5</span>
               </li>
@@ -192,7 +193,7 @@
                 OLEKSANDROOO - <span class="rating__span">1</span>
               </li>
             </ul>
-            <div class="rating__table-second">
+            <div class="rating__table-second" data-aos="zoom-in-right">
               <h3 class="rating__table_title">Топ 1 (весь час):</h3>
               <ul class="rating__list-second">
                 <li class="rating__item-second">
@@ -241,7 +242,7 @@
         </div>
       </section>
       <section class="recomendation">
-        <div class="container recomendation__container">
+        <div class="container recomendation__container" data-aos="zoom-in-up">
           <div class="recomendation__left">
             <a href=""
               ><div class="recomendation__left_top">
@@ -335,5 +336,9 @@
         </p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
