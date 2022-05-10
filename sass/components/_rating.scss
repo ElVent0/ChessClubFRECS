@@ -1,0 +1,120 @@
+.rating {
+  background-image: linear-gradient(
+    to right,
+    $color-bg-grey 90%,
+    #fff 90%,
+    #fff 100%
+  );
+  padding: 67px 0;
+  &__title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 20px;
+  }
+  &__paragraph {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 40px;
+  }
+  &__table {
+    display: flex;
+    &_title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      margin-bottom: 38px;
+    }
+    &_paragraph-first {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 20px;
+    }
+    &_paragraph-second {
+      font-size: 16px;
+      line-height: 19px;
+      background: $color-bg-grey;
+      border-radius: 5px;
+      padding-top: 16px;
+      padding-bottom: 15px;
+      text-align: center;
+    }
+  }
+  &__list-first {
+    margin-right: 20px;
+    min-width: 216px;
+  }
+  &__item-first {
+    font-size: 16px;
+    line-height: 19px;
+    height: 50px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:nth-child(1) {
+      background: #ffe249;
+    }
+    &:nth-child(2) {
+      background: #eaeaea;
+    }
+    &:nth-child(3) {
+      background: #fcb868;
+    }
+  }
+  &__span {
+    font-weight: 700;
+  }
+  &__table-second {
+    background: #fff;
+    min-width: 335px;
+    padding: 40px 20px;
+    border-radius: 5px;
+    max-height: 590px;
+    margin-right: 58px;
+  }
+  &__item-second {
+    margin-bottom: 31px;
+  }
+  &__section-third {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+  }
+  &__image {
+    transition: 0.6s;
+    &:hover {
+      transform: scale(1.4);
+      transform-origin: 50% 10%;
+    }
+    &_thumb {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 29px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+    &_paragraph {
+      font-size: 18px;
+      line-height: 21px;
+    }
+    &_paragraph {
+      margin-bottom: 50px;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

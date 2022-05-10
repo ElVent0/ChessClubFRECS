@@ -1,0 +1,45 @@
+.quote {
+  position: absolute;
+  transform: rotate(90deg);
+  right: -140px;
+  top: 1150px;
+  color: $color-text-grey;
+  text-align: right;
+  line-height: 30px;
+  font-family: "Playfair Display", serif;
+  &-second {
+    position: absolute;
+    transform: rotate(270deg);
+    left: -50px;
+    top: 1690px;
+    color: $color-text-grey;
+    text-align: right;
+    line-height: 30px;
+    font-family: "Playfair Display", serif;
+  }
+  &-third {
+    position: absolute;
+    transform: rotate(90deg);
+    right: -220px;
+    top: 2300px;
+    color: $color-text-grey;
+    text-align: right;
+    line-height: 30px;
+    font-family: "Playfair Display", serif;
+  }
+  &-fourth {
+    position: absolute;
+    transform: rotate(270deg);
+    left: -140px;
+    top: 3050px;
+    color: $color-text-grey;
+    text-align: right;
+    line-height: 30px;
+    font-family: "Playfair Display", serif;
+  }
+}
+
+.italic {
+  font-style: italic;
+  text-align: right;
+}
