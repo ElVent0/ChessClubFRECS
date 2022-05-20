@@ -7,6 +7,9 @@
   text-align: right;
   line-height: 30px;
   font-family: "Playfair Display", serif;
+  @media screen and (max-width: 1250px) {
+    display: none;
+  }
   &-second {
     position: absolute;
     transform: rotate(270deg);
@@ -16,6 +19,9 @@
     text-align: right;
     line-height: 30px;
     font-family: "Playfair Display", serif;
+    @media screen and (max-width: 1250px) {
+      display: none;
+    }
   }
   &-third {
     position: absolute;
@@ -26,6 +32,9 @@
     text-align: right;
     line-height: 30px;
     font-family: "Playfair Display", serif;
+    @media screen and (max-width: 1250px) {
+      display: none;
+    }
   }
   &-fourth {
     position: absolute;
@@ -36,6 +45,9 @@
     text-align: right;
     line-height: 30px;
     font-family: "Playfair Display", serif;
+    @media screen and (max-width: 1250px) {
+      display: none;
+    }
   }
 }
 

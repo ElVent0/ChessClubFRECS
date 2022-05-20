@@ -2,6 +2,9 @@
   width: 100%;
   padding: 67px 0;
   position: relative;
+  @media screen and (max-width: 620px) {
+    padding: 40px 0;
+  }
   &__background {
     width: 90%;
     height: 350px;
@@ -12,10 +15,25 @@
       $color-bg-grey 50%,
       $color-bg-grey 100%
     );
+    @media screen and (max-width: 960px) {
+      background-image: none;
+    }
     top: 0px;
+    @media screen and (max-width: 1250px) {
+      width: 100%;
+    }
   }
   &__content {
     display: flex;
+    @media screen and (max-width: 960px) {
+      flex-wrap: wrap;
+      max-width: 452px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (max-width: 520px) {
+      max-width: 220px;
+    }
   }
   &__poster {
     width: 216px;
@@ -27,12 +45,25 @@
     display: flex;
     justify-content: center;
     padding-top: 167px;
+    @media screen and (max-width: 520px) {
+      width: 100px;
+      height: 100px;
+      padding-top: 60px;
+    }
     &:nth-child(1) {
       background-image: url(../images/icon1.png);
       background-repeat: no-repeat;
       background-position: center 43px;
       user-select: none;
       animation: animateY50 5000ms infinite 1000ms;
+      @media screen and (max-width: 960px) {
+        margin-bottom: 20px;
+      }
+      @media screen and (max-width: 520px) {
+        background-size: 40px 40px;
+        background-position: center 16px;
+        animation: animateY5 5000ms infinite 1000ms;
+      }
     }
     &:nth-child(2) {
       background-image: url(../images/icon2.png);
@@ -41,6 +72,16 @@
       user-select: none;
       animation: animateY-50 5000ms infinite 1000ms;
       padding-top: 160px;
+      @media screen and (max-width: 960px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      @media screen and (max-width: 520px) {
+        padding-top: 60px;
+        background-size: 40px 40px;
+        background-position: center 16px;
+        animation: animateY-5 5000ms infinite 1000ms;
+      }
     }
     &:nth-child(3) {
       background-image: url(../images/icon3.png);
@@ -48,6 +89,11 @@
       background-position: center 43px;
       user-select: none;
       animation: animateY50 5000ms infinite 1000ms;
+      @media screen and (max-width: 520px) {
+        background-size: 40px 40px;
+        background-position: center 16px;
+        animation: animateY5 5000ms infinite 1000ms;
+      }
     }
     &:nth-child(4) {
       background-image: url(../images/icon4.png);
@@ -56,12 +102,26 @@
       user-select: none;
       margin-right: 0;
       animation: animateY-50 5000ms infinite 1000ms;
+      @media screen and (max-width: 960px) {
+        margin-right: 0;
+      }
+      @media screen and (max-width: 520px) {
+        background-size: 40px 40px;
+        background-position: center 16px;
+        animation: animateY-5 5000ms infinite 1000ms;
+      }
     }
   }
   &__paragraph {
     text-align: center;
     font-size: 16px;
     line-height: 19px;
+    @media screen and (max-width: 520px) {
+      font-size: 9px;
+      line-height: 12px;
+      position: relative;
+      bottom: -8px;
+    }
   }
 }
 
@@ -102,6 +162,50 @@
 
   75% {
     transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes animateY5 {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  75% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes animateY-5 {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(5px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  75% {
+    transform: translateY(-5px);
   }
 
   100% {

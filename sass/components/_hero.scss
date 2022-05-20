@@ -9,21 +9,50 @@
   background-repeat: no-repeat;
   background-size: cover, 200% 200%, cover;
   background-attachment: local, local, fixed;
+  background-position: left center center;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 1060px) {
+    background-image: url(../images/media/bg1.jpg);
+    animation: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-position: bottom;
+  }
+  @media screen and (max-width: 620px) {
+    height: 400px;
+  }
   &__container {
     min-width: 956px;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 1060px) {
+      min-width: 200px;
+      max-width: 100%;
+    }
+    @media screen and (max-width: 620px) {
+      align-items: flex-start;
+      position: relative;
+      top: -50px;
+    }
   }
   &__text {
     color: #fff;
+    margin-left: auto;
+    margin-right: auto;
   }
   &__title {
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
     margin-bottom: 20px;
+    @media screen and (max-width: 1060px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 620px) {
+      font-size: 26px;
+    }
   }
   &__paragraph {
     font-size: 24px;
@@ -38,6 +67,16 @@
       line-height: 21px;
       color: $color-text-grey;
       max-width: 280px;
+    }
+    @media screen and (max-width: 1060px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 620px) {
+      font-size: 14px;
+      margin-bottom: 20px;
+      &:nth-child(2) {
+        margin-bottom: 2px;
+      }
     }
   }
   &__link {
@@ -55,6 +94,14 @@
     &:hover {
       background: rgba(255, 255, 255, 0.1);
     }
+    @media screen and (max-width: 1060px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (max-width: 620px) {
+      max-width: 190px;
+      height: 50px;
+    }
   }
   &__poster {
     margin-left: auto;
@@ -64,6 +111,9 @@
     position: relative;
     left: 35px;
     top: 10px;
+    @media screen and (max-width: 1060px) {
+      display: none;
+    }
   }
   &__image {
     transition: 0.6s;

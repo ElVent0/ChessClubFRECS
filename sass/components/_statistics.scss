@@ -1,12 +1,24 @@
 .statistics {
+  &__text {
+    @media screen and (max-width: 960px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
   width: 100%;
   padding: 67px 0;
+  @media screen and (max-width: 620px) {
+    padding: 30px 0;
+  }
   background-image: linear-gradient(
     to right,
     $color-bg-grey 90%,
     #fff 90%,
     #fff 100%
   );
+  @media screen and (max-width: 1250px) {
+    background: $color-bg-grey;
+  }
   &__content {
     display: flex;
     align-items: center;
@@ -16,12 +28,28 @@
     font-size: 28px;
     line-height: 33px;
     margin-bottom: 25px;
+    @media screen and (max-width: 1060px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 520px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
   &__list {
     display: flex;
     flex-wrap: wrap;
     margin-right: -20px;
     margin-bottom: -20px;
+    @media screen and (max-width: 960px) {
+      max-width: 452px;
+    }
+    @media screen and (max-width: 520px) {
+      justify-content: center;
+      max-width: 250px;
+      position: relative;
+      left: -9px;
+    }
   }
   &__item {
     background: #fff;
@@ -30,6 +58,19 @@
     padding: 20px 0 25px 0;
     margin-right: 20px;
     margin-bottom: 20px;
+    @media screen and (max-width: 1060px) {
+    }
+    @media screen and (max-width: 960px) {
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+    @media screen and (max-width: 520px) {
+      padding: 10px 10px;
+      min-width: 120px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
   }
   &__paragraph {
     &_top {
@@ -37,15 +78,27 @@
       line-height: 19px;
       text-align: center;
       margin-bottom: 23px;
+      @media screen and (max-width: 520px) {
+        font-size: 8px;
+        line-height: 10px;
+        margin-bottom: 10px;
+      }
     }
     &_bottom {
       font-weight: 700;
       font-size: 24px;
       line-height: 28px;
       text-align: center;
+      @media screen and (max-width: 520px) {
+        font-size: 12px;
+        line-height: 16px;
+      }
     }
   }
   &__image {
     border-radius: 5px;
+    @media screen and (max-width: 1060px) {
+      display: none;
+    }
   }
 }

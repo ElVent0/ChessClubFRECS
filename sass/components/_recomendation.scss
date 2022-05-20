@@ -1,5 +1,11 @@
 .recomendation {
   padding: 67px 0;
+  @media screen and (max-width: 620px) {
+    padding: 30px 0;
+  }
+  @media screen and (max-width: 960px) {
+    display: none;
+  }
   &__container {
     user-select: none;
     display: flex;
