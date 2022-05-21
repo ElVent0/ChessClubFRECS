@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover, 200% 200%, cover;
   background-attachment: local, local, fixed;
-  background-position: center center center;
+  background-position: bottom, center, center;
   display: flex;
   align-items: center;
   @media screen and (max-width: 1500px) {
@@ -44,7 +44,7 @@
   }
   &__text {
     color: #fff;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
   }
   &__title {
@@ -72,6 +72,8 @@
       line-height: 21px;
       color: $color-text-grey;
       max-width: 280px;
+      margin-left: auto;
+      margin-right: auto;
     }
     @media screen and (max-width: 1060px) {
       text-align: center;
@@ -109,13 +111,8 @@
     }
   }
   &__poster {
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 35px;
-    top: 10px;
+    margin-left: 0;
+
     @media screen and (max-width: 1060px) {
       display: none;
     }

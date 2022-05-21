@@ -69,7 +69,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover, 200% 200%, cover;
   background-attachment: local, local, fixed;
-  background-position: center center center;
+  background-position: bottom, center, center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,7 +124,7 @@ a {
 }
 .hero__text {
   color: #fff;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
 }
 .hero__title {
@@ -157,6 +157,8 @@ a {
   line-height: 21px;
   color: #505050;
   max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 1060px) {
   .hero__paragraph {
@@ -208,20 +210,7 @@ a {
   }
 }
 .hero__poster {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  left: 35px;
-  top: 10px;
+  margin-left: 0;
 }
 @media screen and (max-width: 1060px) {
   .hero__poster {
