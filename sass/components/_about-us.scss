@@ -32,7 +32,7 @@
       margin-right: auto;
     }
     @media screen and (max-width: 520px) {
-      max-width: 220px;
+      max-width: 250px;
     }
   }
   &__poster {
@@ -46,8 +46,8 @@
     justify-content: center;
     padding-top: 167px;
     @media screen and (max-width: 520px) {
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
       padding-top: 60px;
     }
     &:nth-child(1) {
@@ -63,6 +63,7 @@
         background-size: 40px 40px;
         background-position: center 16px;
         animation: animateY5 5000ms infinite 1000ms;
+        margin-right: 10px;
       }
     }
     &:nth-child(2) {
@@ -93,6 +94,7 @@
         background-size: 40px 40px;
         background-position: center 16px;
         animation: animateY5 5000ms infinite 1000ms;
+        margin-right: 10px;
       }
     }
     &:nth-child(4) {

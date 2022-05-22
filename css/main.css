@@ -304,7 +304,7 @@ a {
 }
 @media screen and (max-width: 520px) {
   .about-us__content {
-    max-width: 220px;
+    max-width: 250px;
   }
 }
 .about-us__poster {
@@ -324,8 +324,8 @@ a {
 }
 @media screen and (max-width: 520px) {
   .about-us__poster {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     padding-top: 60px;
   }
 }
@@ -351,6 +351,7 @@ a {
     background-position: center 16px;
     -webkit-animation: animateY5 5000ms infinite 1000ms;
             animation: animateY5 5000ms infinite 1000ms;
+    margin-right: 10px;
   }
 }
 .about-us__poster:nth-child(2) {
@@ -397,6 +398,7 @@ a {
     background-position: center 16px;
     -webkit-animation: animateY5 5000ms infinite 1000ms;
             animation: animateY5 5000ms infinite 1000ms;
+    margin-right: 10px;
   }
 }
 .about-us__poster:nth-child(4) {
