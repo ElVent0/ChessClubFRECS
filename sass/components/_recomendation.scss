@@ -19,7 +19,7 @@
       height: 223px;
       background: $color-bg-grey;
       margin-bottom: 20px;
-      background-image: url(../images/imgbg.jpg);
+      background-image: url(../images/imgbg1.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -55,7 +55,7 @@
       height: 223px;
       background: $color-bg-grey;
       margin-bottom: 20px;
-      background-image: url(../images/imgbg.jpg);
+      background-image: url(../images/imgbg3.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -172,8 +172,8 @@
     &:hover {
       background: rgba(255, 255, 255, 0.2);
     }
-    &_second {
-      margin-top: 20px;
+    &_first {
+      margin-top: 82px;
       padding: 10px 15px;
       border: 2px #fff solid;
       border-radius: 5px;
@@ -184,8 +184,23 @@
         background: rgba(255, 255, 255, 0.2);
       }
     }
+    &_second {
+      margin-top: 25px;
+      padding: 10px 15px;
+      border: 2px #fff solid;
+      border-radius: 5px;
+      max-width: 150px;
+      display: flex;
+      justify-content: center;
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+    }
+    &_fourth {
+      margin-top: 100px;
+    }
     &_fifth {
-      margin-top: 60px;
+      margin-top: 72px;
       padding: 10px 15px;
       border: 2px #fff solid;
       border-radius: 5px;

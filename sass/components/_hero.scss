@@ -18,7 +18,7 @@
       url(../images/bg1-2.jpg);
   }
   @media screen and (max-width: 1060px) {
-    background-image: url(../images/media/bg1.jpg);
+    background-image: url(../images/media/bg1-2.jpg);
     animation: none;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,7 +26,7 @@
     background-position: bottom;
   }
   @media screen and (max-width: 620px) {
-    height: 400px;
+    height: calc(100vh - 100px);
   }
   &__container {
     min-width: 956px;
@@ -38,8 +38,6 @@
     }
     @media screen and (max-width: 620px) {
       align-items: flex-start;
-      position: relative;
-      top: -50px;
     }
   }
   &__text {
