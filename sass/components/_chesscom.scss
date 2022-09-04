@@ -25,6 +25,9 @@
     }
     @media screen and (max-width: 620px) {
       max-width: 260px;
+      box-shadow: -1px 38px 86px -57px rgba(0, 0, 0, 0.54);
+      -webkit-box-shadow: -1px 38px 86px -57px rgba(0, 0, 0, 0.54);
+      -moz-box-shadow: -1px 38px 86px -57px rgba(0, 0, 0, 0.54);
     }
   }
   &__title {

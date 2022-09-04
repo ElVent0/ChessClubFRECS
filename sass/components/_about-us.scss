@@ -45,6 +45,9 @@
     display: flex;
     justify-content: center;
     padding-top: 167px;
+    box-shadow: -1px 38px 86px -40px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: -1px 38px 86px -40px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -1px 38px 86px -40px rgba(0, 0, 0, 0.2);
     @media screen and (max-width: 520px) {
       width: 135px;
       height: 120px;

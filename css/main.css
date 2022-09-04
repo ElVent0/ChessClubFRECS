@@ -129,7 +129,7 @@ a {
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 1060px) {
   .hero__title {
@@ -139,15 +139,19 @@ a {
 @media screen and (max-width: 620px) {
   .hero__title {
     font-size: 26px;
+    margin-bottom: 10px;
   }
 }
 .hero__paragraph {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 28px;
   margin-bottom: 30px;
+  font-style: italic;
 }
-.hero__paragraph:nth-child(2) {
-  margin-bottom: 10px;
+.hero__paragraph--registration {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-style: normal;
 }
 .hero__paragraph_right {
   font-style: italic;
@@ -163,13 +167,13 @@ a {
     text-align: center;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 1060px) {
   .hero__paragraph {
     font-size: 14px;
     margin-bottom: 20px;
   }
-  .hero__paragraph:nth-child(2) {
-    margin-bottom: 2px;
+  .hero__paragraph--registration {
+    display: none;
   }
 }
 .hero__link {
@@ -233,6 +237,45 @@ a {
   height: 360px;
   border-radius: 50%;
   overflow: hidden;
+}
+.hero__arrow {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: -1px 20px 30px -9px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -1px 20px 30px -9px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -1px 20px 30px -9px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+@media screen and (min-width: 1060px) {
+  .hero__arrow {
+    display: none;
+  }
+}
+.hero__svg {
+  width: 34px;
+  height: 34px;
+  fill: #f5aa4b;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.hero__logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1060px) {
+  .hero__logo {
+    display: none;
+  }
 }
 
 @-webkit-keyframes Gradient {
@@ -319,6 +362,9 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 167px;
+  box-shadow: -1px 38px 86px -40px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -1px 38px 86px -40px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -1px 38px 86px -40px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 520px) {
   .about-us__poster {
@@ -657,6 +703,9 @@ a {
 @media screen and (max-width: 620px) {
   .chesscom__text {
     max-width: 260px;
+    box-shadow: -1px 38px 86px -57px rgba(0, 0, 0, 0.54);
+    -webkit-box-shadow: -1px 38px 86px -57px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: -1px 38px 86px -57px rgba(0, 0, 0, 0.54);
   }
 }
 .chesscom__title {
@@ -855,6 +904,9 @@ a {
   background: #fff;
   border-radius: 5px;
   margin-bottom: 10px;
+  box-shadow: -1px 38px 86px -63px rgba(0, 0, 0, 0.56);
+  -webkit-box-shadow: -1px 38px 86px -63px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: -1px 38px 86px -63px rgba(0, 0, 0, 0.56);
 }
 .rating__item-first:last-child {
   margin-bottom: 0;
@@ -886,6 +938,9 @@ a {
   border-radius: 5px;
   max-height: 590px;
   margin-right: 58px;
+  box-shadow: -1px 38px 86px -63px rgba(0, 0, 0, 0.56);
+  -webkit-box-shadow: -1px 38px 86px -63px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: -1px 38px 86px -63px rgba(0, 0, 0, 0.56);
 }
 @media screen and (max-width: 1060px) {
   .rating__table-second {
@@ -1304,6 +1359,9 @@ a {
   padding: 20px 0 25px 0;
   margin-right: 20px;
   margin-bottom: 20px;
+  box-shadow: -1px 38px 86px -39px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -1px 38px 86px -39px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -1px 38px 86px -39px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 960px) {
   .statistics__item:nth-child(2n) {

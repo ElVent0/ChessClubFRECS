@@ -58,6 +58,9 @@
     padding: 20px 0 25px 0;
     margin-right: 20px;
     margin-bottom: 20px;
+    box-shadow: -1px 38px 86px -39px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: -1px 38px 86px -39px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -1px 38px 86px -39px rgba(0, 0, 0, 0.2);
     @media screen and (max-width: 1060px) {
     }
     @media screen and (max-width: 960px) {
